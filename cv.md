@@ -24,7 +24,7 @@ console.log(result);
 ```
 
 ## Education
-* University: NAU
+* University: NUBiP (The National University of Life and Environmental Sciences of Ukraine)
 
 ## Courses:
 
