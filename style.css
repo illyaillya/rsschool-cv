@@ -34,6 +34,48 @@ header{
     padding-top: 1em;
     padding-bottom: 1em;
 }
+
+
+.login-form{ 
+    
+    visibility:hidden;
+    font-family: 'Aleo', serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    right: 12em;
+    top:5em; 
+    width: 20%;
+    position: absolute;
+    border-radius: 8px;
+    color:black;
+    padding: 1em;
+    background: rgb(137,212,226);
+    background: linear-gradient(0deg, rgba(137,212,226,1) 0%, rgba(238,238,250,1) 62%, rgba(249,252,252,1) 100%);
+}
+
+.login-form p {
+    margin: 0;
+}
+
+.login-form h3 {
+    text-align: center;
+}
+
+
+.login-form input {
+    border: none;
+    width: 100%;
+    height: 2.5em;
+    border-radius: 5px;
+
+}
+.visible {
+    visibility: visible;
+    
+}
+
+
 #steps, #destinations, #stories{
    padding-top: 4em;
 }
@@ -142,6 +184,7 @@ section h2 {
 
 .slider-mobil{
     display: none;
+    
 }
 
 .flex-card{
@@ -329,6 +372,21 @@ input::-webkit-input-placeholder{
   transform: rotate(-405deg);
 }
 
+.slider-transition{    
+    transition:all 1.0s ease-in-out;
+}
+
+.img-1:hover, .img-3:hover {
+    cursor: pointer;
+}
+
+.position-right{
+    position: relative;
+    left: 200%;
+}
+
+
+
 
   @media only screen and (max-width: 390px) {
     body {
@@ -451,15 +509,22 @@ input::-webkit-input-placeholder{
     .slider{
         display: none;
     }
-    .slider-mobil {
+    .slider-mobil {  
+           
         display: block;
         background-image:url('images/Rectangle23.jpg');
+        background-color: #333;
         width: 92vw;
         height: 14em;
         background-size:cover;
         background-position:center;
         border-radius:1em;
         margin: 0 1em 0 1em;
+                
+    }
+
+    div.slider-mobil{
+        margin-top: -5em;
     }
 
     .dot {
@@ -522,6 +587,38 @@ footer{
 }
 .trips div {    
     padding: 0 1em;
+
+  }
+
+  .right-mobil, .left-mobil{
+    font-size: 2.5em;
+    color: rgb(27, 22, 22);
+    position: relative;
+    color: rgba(242, 119, 92, 0.256);
+    width: 2em;    
+  }
+  .right-mobil:hover, .left-mobil:hover{
+    color: rgba(242, 120, 92, 1); 
+    cursor: pointer; 
+    
+  }
+
+  .right-mobil{
+    top:1.5em;
+    left:7.5em
+  }
+  .left-mobil{
+    top:2.8em;
+    right:0
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 0.8s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
   }
 
 
@@ -569,6 +666,8 @@ footer{
   .flex-text{
     flex: 0 0 50%;
   }
+
+  
 
 }
 
