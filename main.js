@@ -14,17 +14,17 @@ const reset = () =>{
 
 const dotActive = () => {
     console.log(images[1])
-    if(images[1].src === 'http://127.0.0.1:5500/images/japan.jpg') {
+    if(images[1].src === 'https://illyaillya.github.io/rsschool-cv/images/japan.jpg') {
         dot[1].className='dot active';
         dot[0].className='dot';
         dot[2].className='dot';
     } 
-    if(images[0].src === 'http://127.0.0.1:5500/images/japan.jpg') {
+    if(images[0].src === 'https://illyaillya.github.io/rsschool-cv/images/japan.jpg') {
         dot[0].className='dot active';
         dot[1].className='dot';
         dot[2].className='dot';
     } 
-    if(images[2].src === 'http://127.0.0.1:5500/images/japan.jpg') {
+    if(images[2].src === 'https://illyaillya.github.io/rsschool-cv/images/japan.jpg') {
         dot[2].className='dot active';
         dot[0].className='dot';
         dot[1].className='dot';
